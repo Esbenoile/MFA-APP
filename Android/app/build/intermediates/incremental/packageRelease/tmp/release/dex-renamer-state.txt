@@ -1,0 +1,4 @@
+#Mon Sep 29 19:57:18 WIB 2025
+base.0=C\:\\Users\\USER\\Documents\\SemesterAksel\\ANDROID_MFA\\MFAApp\\Android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

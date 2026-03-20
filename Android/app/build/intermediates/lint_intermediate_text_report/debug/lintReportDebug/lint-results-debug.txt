@@ -1,0 +1,86 @@
+C:\Users\USER\Documents\SemesterAksel\ANDROID_MFA\MFAApp\Android\app\build.gradle:55: Warning: A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.9.0 is available: 2.2.0 [GradleDependency]
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.0"
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\USER\Documents\SemesterAksel\ANDROID_MFA\MFAApp\Android\app\build.gradle:56: Warning: A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.17.0 [GradleDependency]
+    implementation 'androidx.core:core-ktx:1.12.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\USER\Documents\SemesterAksel\ANDROID_MFA\MFAApp\Android\app\build.gradle:57: Warning: A newer version of androidx.appcompat:appcompat than 1.7.0 is available: 1.7.1 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\USER\Documents\SemesterAksel\ANDROID_MFA\MFAApp\Android\app\build.gradle:58: Warning: A newer version of com.google.android.gms:play-services-fido than 19.0.0 is available: 21.2.0 [GradleDependency]
+    implementation 'com.google.android.gms:play-services-fido:19.0.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+C:\Users\USER\Documents\SemesterAksel\ANDROID_MFA\MFAApp\Android\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml:2: Warning: The resource R.mipmap.ic_launcher appears to be unused [UnusedResources]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+C:\Users\USER\Documents\SemesterAksel\ANDROID_MFA\MFAApp\Android\app\src\main\res\mipmap-hdpi\ic_launcher_adaptive_back.png: Warning: The resource R.mipmap.ic_launcher_adaptive_back appears to be unused [UnusedResources]
+C:\Users\USER\Documents\SemesterAksel\ANDROID_MFA\MFAApp\Android\app\src\main\res\mipmap-hdpi\ic_launcher_adaptive_fore.png: Warning: The resource R.mipmap.ic_launcher_adaptive_fore appears to be unused [UnusedResources]
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+C:\Users\USER\Documents\SemesterAksel\ANDROID_MFA\MFAApp\Android\app\src\main\res\mipmap-hdpi\ic_launcher_adaptive_back.png: Warning: Launcher icons should not fill every pixel of their square region; see the design guide for details [IconLauncherShape]
+C:\Users\USER\Documents\SemesterAksel\ANDROID_MFA\MFAApp\Android\app\src\main\res\mipmap-mdpi\ic_launcher_adaptive_back.png: Warning: Launcher icons should not fill every pixel of their square region; see the design guide for details [IconLauncherShape]
+C:\Users\USER\Documents\SemesterAksel\ANDROID_MFA\MFAApp\Android\app\src\main\res\mipmap-xhdpi\ic_launcher_adaptive_back.png: Warning: Launcher icons should not fill every pixel of their square region; see the design guide for details [IconLauncherShape]
+C:\Users\USER\Documents\SemesterAksel\ANDROID_MFA\MFAApp\Android\app\src\main\res\mipmap-xxhdpi\ic_launcher_adaptive_back.png: Warning: Launcher icons should not fill every pixel of their square region; see the design guide for details [IconLauncherShape]
+C:\Users\USER\Documents\SemesterAksel\ANDROID_MFA\MFAApp\Android\app\src\main\res\mipmap-xxxhdpi\ic_launcher_adaptive_back.png: Warning: Launcher icons should not fill every pixel of their square region; see the design guide for details [IconLauncherShape]
+
+   Explanation for issues of type "IconLauncherShape":
+   According to the Android Design Guide
+   (https://d.android.com/r/studio-ui/designer/material/iconography) your
+   launcher icons should "use a distinct silhouette", a "three-dimensional,
+   front view, with a slight perspective as if viewed from above, so that
+   users perceive some depth."
+
+   The unique silhouette implies that your launcher icon should not be a
+   filled square.
+
+C:\Users\USER\Documents\SemesterAksel\ANDROID_MFA\MFAApp\Android\app\src\main\AndroidManifest.xml:11: Warning: Should explicitly set android:icon, there is no default [MissingApplicationIcon]
+    <application
+     ~~~~~~~~~~~
+
+   Explanation for issues of type "MissingApplicationIcon":
+   You should set an icon for the application as whole because there is no
+   default. This attribute must be set as a reference to a drawable resource
+   containing the image (for example @drawable/icon).
+
+   https://developer.android.com/studio/publish/preparing#publishing-configure
+
+C:\Users\USER\Documents\SemesterAksel\ANDROID_MFA\MFAApp\Android\app\src\main\res\layout\activity_main.xml:10: Warning: Hardcoded string "Welcome to MFA App", should use @string resource [HardcodedText]
+        android:text="Welcome to MFA App"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 14 warnings

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.3.0" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.example.mfaapp.MainActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.mipmap.ic_launcher"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher.xml"
+            line="2"
+            column="1"
+            startOffset="39"
+            endLine="5"
+            endColumn="17"
+            endOffset="268"/>
+        <location id="R.mipmap.ic_launcher_adaptive_back"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-hdpi/ic_launcher_adaptive_back.png"/>
+        <entry
+            name="model"
+            string="id[tvWelcome(D)],layout[activity_main(U)],mipmap[ic_launcher(D),ic_launcher_adaptive_back(D),ic_launcher_adaptive_fore(D)],style[Theme_AppCompat_Light_NoActionBar(R)];2^3^4;;;"/>
+        <location id="R.mipmap.ic_launcher_adaptive_fore"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-hdpi/ic_launcher_adaptive_fore.png"/>
+    </map>
+
+</incidents>

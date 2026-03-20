@@ -1,0 +1,7 @@
+R_DEF: Internal format may change without notice
+local
+id tvWelcome
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_adaptive_back
+mipmap ic_launcher_adaptive_fore

@@ -1,0 +1,2 @@
+rootProject.name = "MFAApp"
+include(":app")
